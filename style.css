@@ -1,0 +1,152 @@
+/* to select via tags just type tagname { } */
+/* We can select via attributes, tags, classes, id */
+/* id is unique */
+/* to select via id, use #idname { } */
+/* to select via class, use .classname { } */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    /* --primary-color: #A3E635; */
+    /* --primary-color: #34D399; */
+    /* --primary-color: #10B981; */
+    --primary-color: #84CC16;
+    --off-white: #f3f4f3;
+    --dark-gray: #687268;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+/* container */
+.container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;   /*it'll make it center*/
+}
+
+/* links */
+.link {
+    text-decoration: none;  /*to remove underline*/
+    padding: 0.5rem 1rem;   /*top right bottom left. if we give just two values as we did here, bottom will get 0.5rem and left will get 1rem*/
+}
+
+.link-primary {
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.link-secondary {
+    color: var(--primary-color);
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+/* lists */
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;    
+    padding: 0rem 0.5rem;
+}
+
+/*navigation*/
+
+.navigation {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.navigation .nav-brand {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navigation .nav-pills {
+    text-align: right;
+}
+
+/*if there's a link inside navigation the change color to white*/
+.navigation .link {
+    color: white;
+}
+
+.navigation .link-active {
+    font-weight: bold;
+}
+
+/* header */
+
+.hero {
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.hero .hero-img {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+.hero .hero-heading {
+    text-align: center;
+    padding: 1rem;
+    color: var(--dark-gray);
+}
+
+.hero .hero-heading .heading-highlight {
+    color: var(--primary-color);
+}
+
+/* section */
+
+.section {
+    padding: 2rem;
+}
+
+.section h1 {
+    text-align: center;
+}
+
+.ow {
+    background-color: var(--off-white);
+}
+
+/* footer */
+
+.footer {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    border-top-right-radius: 1rem;
+}
+
+.footer .link {
+    color: white;
+}
+
+.footer .footer-header {
+    font-weight: bold;
+    font-size: large;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
